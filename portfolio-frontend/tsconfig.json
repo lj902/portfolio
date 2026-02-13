@@ -11,6 +11,11 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "experimentalDecorators": true,
+    "paths": {
+      "portfolio-frontend-core-lib": [
+        "./dist/portfolio-frontend-core-lib"
+      ]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "preserve"
@@ -28,6 +33,12 @@
     },
     {
       "path": "./projects/portfolio-frontend-app/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/portfolio-frontend-core-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/portfolio-frontend-core-lib/tsconfig.spec.json"
     }
   ]
 }

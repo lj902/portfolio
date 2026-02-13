@@ -79,6 +79,32 @@
           "builder": "@angular/build:unit-test"
         }
       }
+    },
+    "portfolio-frontend-core-lib": {
+      "projectType": "library",
+      "root": "projects/portfolio-frontend-core-lib",
+      "sourceRoot": "projects/portfolio-frontend-core-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/portfolio-frontend-core-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/portfolio-frontend-core-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/portfolio-frontend-core-lib/tsconfig.spec.json"
+          }
+        }
+      }
     }
   }
 }
